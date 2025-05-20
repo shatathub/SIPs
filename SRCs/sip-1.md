@@ -427,51 +427,7 @@ It occasionally becomes necessary to transfer ownership of SIPs to a new champio
 
 If you are interested in assuming ownership of an SIP, send a message asking to take over, addressed to both the original author and the SIP editor. If the original author doesn't respond to the email in a timely manner, the SIP editor will make a unilateral decision (it's not like such decisions can't be reversed :)).
 
-## SIP Editors
 
-The current SIP editors are
-
-- Matt Garnett (@lightclient)
-- Sam Wilson (@SamWilsn)
-- Zainan Victor Zhou (@xinbenlv)
-- Gajinder Singh (@g11tech)
-
-Emeritus SIP editors are
-
-- Alex Beregszaszi (@axic)
-- Casey Detrio (@cdetrio)
-- Gavin John (@Pandapip1)
-- Greg Colvin (@gcolvin)
-- Hudson Jameson (@Souptacular)
-- Martin Becze (@wanderer)
-- Micah Zoltu (@MicahZoltu)
-- Nick Johnson (@arachnid)
-- Nick Savers (@nicksavers)
-- Vitalik Buterin (@vbuterin)
-
-If you would like to become an SIP editor, please check [SIP-5069](./SIP-5069.md).
-
-## SIP Editor Responsibilities
-
-For each new SIP that comes in, an editor does the following:
-
-- Read the SIP to check if it is ready: sound and complete. The ideas must make technical sense, even if they don't seem likely to get to final status.
-- The title should accurately describe the content.
-- Check the SIP for language (spelling, grammar, sentence structure, etc.), markup (GitHub flavored Markdown), code style
-
-If the SIP isn't ready, the editor will send it back to the author for revision, with specific instructions.
-
-Once the SIP is ready for the repository, the SIP editor will:
-
-- Assign an SIP number (generally incremental; editors can reassign if number sniping is suspected)
-- Merge the corresponding [pull request](https://github.com/Shatathub/SIPs/pulls)
-- Send a message back to the SIP author with the next step.
-
-Many SIPs are written and maintained by developers with write access to the Shatat codebase. The SIP editors monitor SIP changes, and correct any structure, grammar, spelling, or markup mistakes we see.
-
-The editors don't pass judgment on SIPs. We merely do the administrative & editorial part.
-
-## Style Guide
 
 ### Titles
 
