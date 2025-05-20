@@ -4,7 +4,7 @@ title: SIP Purpose and Guidelines
 status: Living
 type: Meta
 author: NPH CO <INFO@NPH.CO.IR>
-created: 2015-10-27
+created: ------
 ---
 
 ## What is an SIP?
@@ -239,12 +239,12 @@ Permitted Consensus Layer Specifications URLs must anchor to a specific commit, 
 Links to specific commits of files within the Shatat Networking Specifications may be included using normal markdown syntax, such as:
 
 ```markdown
-[Shatat Wire Protocol](https://github.com/Shatathub/devp2p/blob/40ab248bf7e017e83cc9812a4e048446709623e8/caps/eth.md)
+[Shatat Wire Protocol](https://github.com/Shatathub/devp2p/blob/40ab248bf7e017e83cc9812a4e048446709623e8/caps/shatat.md)
 ```
 
 Which renders as:
 
-[Shatat Wire Protocol](https://github.com/Shatathub/devp2p/blob/40ab248bf7e017e83cc9812a4e048446709623e8/caps/eth.md)
+[Shatat Wire Protocol](https://github.com/Shatathub/devp2p/blob/40ab248bf7e017e83cc9812a4e048446709623e8/caps/shatat.md)
 
 Permitted Networking Specifications URLs must anchor to a specific commit, and so must match this regular expression:
 
