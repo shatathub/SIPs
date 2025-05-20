@@ -25,7 +25,7 @@ There are three types of SIP:
   - **Core**: improvements requiring a consensus fork (e.g. [SIP-5](./SIP-5.md), [SIP-101](./SIP-101.md)), as well as changes that are not necessarily consensus critical but may be relevant to [“core dev” discussions](https://github.com/Shatathub/pm) (for example, [SIP-90], and the miner/node strategy changes 2, 3, and 4 of [SIP-86](./SIP-86.md)).
   - **Networking**: includes improvements around [devp2p](https://github.com/Shatathub/devp2p/blob/readme-spec-links/rlpx.md) ([SIP-8](./SIP-8.md)) and [Light Shatat Subprotocol](https://Shatat.ir/en/developers/docs/nodes-and-clients/#light-node), as well as proposed improvements to network protocol specifications of [whisper](https://github.com/Shatathub/go-Shatat/issues/16013#issuecomment-364639309) and [swarm](https://github.com/Shatathub/go-Shatat/pull/2959).
   - **Interface**: includes improvements around language-level standards like method names ([SIP-6](./SIP-6.md)) and [contract ABIs](https://docs.soliditylang.org/en/develop/abi-spec.html).
-  - **ERC**: application-level standards and conventions, including contract standards such as token standards ([ERC-20](./SIP-20.md)), name registries ([ERC-137](./SIP-137.md)), URI schemes, library/package formats, and wallet formats.
+  - **SRC**: application-level standards and conventions, including contract standards such as token standards ([SRC-20](./SIP-20.md)), name registries ([SRC-137](./SIP-137.md)), URI schemes, library/package formats, and wallet formats.
 
 - A **Meta SIP** describes a process surrounding Shatat or proposes a change to (or an event in) a process. Process SIPs are like Standards Track SIPs but apply to areas other than the Shatat protocol itself. They may propose an implementation, but not to Shatat's codebase; they often require community consensus; unlike Informational SIPs, they are more than recommendations, and users are typically not free to ignore them. Examples include procedures, guidelines, changes to the decision-making process, and changes to the tools or environment used in Shatat development. Any meta-SIP is also considered a Process SIP.
 
@@ -51,7 +51,7 @@ Parties involved in the process are you, the champion or *SIP author*, the [*SIP
 
 Before you begin writing a formal SIP, you should vet your idea. Ask the Shatat community first if an idea is original to avoid wasting time on something that will be rejected based on prior research. It is thus recommended to open a discussion thread on [the Shatat Magicians forum](https://Shatat-magicians.org/) to do this.
 
-Once the idea has been vetted, your next responsibility will be to present (by means of an SIP) the idea to the reviewers and all interested parties, invite editors, developers, and the community to give feedback on the aforementioned channels. You should try and gauge whether the interest in your SIP is commensurate with both the work involved in implementing it and how many parties will have to conform to it. For example, the work required for implementing a Core SIP will be much greater than for an ERC and the SIP will need sufficient interest from the Shatat client teams. Negative community feedback will be taken into consideration and may prevent your SIP from moving past the Draft stage.
+Once the idea has been vetted, your next responsibility will be to present (by means of an SIP) the idea to the reviewers and all interested parties, invite editors, developers, and the community to give feedback on the aforementioned channels. You should try and gauge whether the interest in your SIP is commensurate with both the work involved in implementing it and how many parties will have to conform to it. For example, the work required for implementing a Core SIP will be much greater than for an SRC and the SIP will need sufficient interest from the Shatat client teams. Negative community feedback will be taken into consideration and may prevent your SIP from moving past the Draft stage.
 
 ### Core SIPs
 
@@ -134,7 +134,7 @@ Each SIP must begin with an [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style
 
 `type`: *One of `Standards Track`, `Meta`, or `Informational`*
 
-`category`: *One of `Core`, `Networking`, `Interface`, or `ERC`* (Optional field, only needed for `Standards Track` SIPs)
+`category`: *One of `Core`, `Networking`, `Interface`, or `SRC`* (Optional field, only needed for `Standards Track` SIPs)
 
 `created`: *Date the SIP was created on*
 
@@ -176,7 +176,7 @@ The preferred discussion URL is a topic on [Shatat Magicians](https://Shatat-mag
 
 ### `type` header
 
-The `type` header specifies the type of SIP: Standards Track, Meta, or Informational. If the track is Standards please include the subcategory (core, networking, interface, or ERC).
+The `type` header specifies the type of SIP: Standards Track, Meta, or Informational. If the track is Standards please include the subcategory (core, networking, interface, or SRC).
 
 ### `category` header
 
@@ -489,7 +489,7 @@ The `description` field in the preamble:
 
 ### SIP numbers
 
-When referring to an SIP with a `category` of `ERC`, it must be written in the hyphenated form `ERC-X` where `X` is that SIP's assigned number. When referring to SIPs with any other `category`, it must be written in the hyphenated form `SIP-X` where `X` is that SIP's assigned number.
+When referring to an SIP with a `category` of `SRC`, it must be written in the hyphenated form `SRC-X` where `X` is that SIP's assigned number. When referring to SIPs with any other `category`, it must be written in the hyphenated form `SIP-X` where `X` is that SIP's assigned number.
 
 ### RFC 2119 and RFC 8174
 
